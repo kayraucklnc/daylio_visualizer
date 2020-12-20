@@ -107,7 +107,7 @@ function setup() {
 let g = 0;
 
 function mouseWheel(event) {
-  g += 2 * Math.sign(event.delta);
+  g += 2 * -Math.sign(event.delta);
   g = min(0, g);
   g = max(-13, g);
   background(41);
